@@ -1,0 +1,63 @@
+@mixin for-tabs-only{
+    @media only screen and (min-width:768px) and (max-width:992px){
+        @content;
+    }
+}
+@mixin for-large-only{
+    @media only screen and (min-width:992px){
+        @content;
+    }
+}
+@mixin for-all-devices{
+    @media only screen and (min-width:200px) and (max-width:992px){
+        @content;
+    }
+}
+@mixin for-extra-small-devices{
+    @media only screen and (min-width:200px) and (max-width:400px){
+        @content;
+    }
+}
+@mixin for-phones-devices{
+    @media only screen and (min-width:200px) and (max-width:575px){
+        @content;
+    }
+}
+@mixin for-good-phones{
+    @media only screen and (min-width:200px) and (max-width:768px){
+        @content;
+    }
+}
+@mixin for-servcie-plan-img{
+    @media only screen and (min-width:200px) and (max-width:460px){
+        @content;
+    }
+}
+@mixin f-768px-to-1200px{
+    @media only screen and (min-width:768px) and (max-width:1200px){
+        @content;
+    }
+}
+@mixin ul-navwrap{
+    justify-content: space-evenly;
+    ul{
+        
+        .nav-item{
+            padding: 5px 5px;
+                @include for-servcie-plan-img{
+                    padding: 0px 5px;
+                } 
+            font-family: $primaryFont;
+
+                .nav-link{
+                    text-transform: capitalize;
+                    transition: 0.3s linear;
+                    color:$secondaryFontColor;
+                    &:hover{
+                        text-decoration: none;
+                        color:#00a6eb;
+                    }
+                }
+        }
+    }
+}

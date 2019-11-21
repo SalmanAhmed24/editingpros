@@ -1,0 +1,977 @@
+
+@import './partials/reset.scss';
+@import './partials/variables.scss';
+@import './partials/mixins.scss';
+html {
+  scroll-behavior: smooth;
+}
+.cus-nav{
+    padding: .5rem 0rem !important;
+}
+.navbar-toggler {
+    padding: 0px !important;
+}
+.nav-wrap{
+    background-color: #0e1436;
+}
+.navbar-brand{
+            box-shadow: 0 0 5px #a2a2a2;
+                @include for-servcie-plan-img{
+                    width:150px;
+                }
+                img{
+                    @include for-servcie-plan-img{
+                    width:150px;
+                }
+                }
+}
+.dropdown-menu {
+position: absolute;
+top: 135%;
+}
+.navbar-toggler-icon{
+    color: $secondaryFontColor;
+}        
+.cus-ul-wrap{
+    @include ul-navwrap;
+}
+.banner{
+    background-image: url('../img/main-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner-div{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background: transparent;
+        @include for-phones-devices{
+            padding-top:100px;
+            padding-bottom: 50px;
+        }
+
+    h1{
+        padding: 15px 0px;
+        font-size: 45px;
+        font-weight: bold;
+        font-family: $primaryFont;
+        color: $secondaryFontColor;
+        text-transform: uppercase;
+        @include for-phones-devices{
+            font-size: 35px;
+        }
+    }
+    p{
+        padding: 15px 0px 60px 0px;
+        font-size: 18px;
+        font-family: $primaryFont;
+        color: $secondaryFontColor;
+        line-height: 25px;
+        @include for-phones-devices{
+            font-size: 14px;
+            line-height: 20px;
+            padding:15px 0px 30px 0px;
+        }
+    }
+    a{
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-family: $primaryFont;
+        color:$secondaryFontColor;
+        background-color: #00a6eb;
+        transition:0.3s linear;
+
+            &:hover{
+                text-decoration: none;
+                background:#fff;
+                color:#00a6eb; 
+            }
+    }
+}
+.card-container{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: #e6e9f8;
+        .card{
+            width:auto;
+            position: relative;
+            text-align: center;
+            border-radius: 0px;
+            transition: 0.5s linear;
+            height: 230px;
+            &:hover{
+                    background: #00a6eb;  /* fallback for old browsers */
+                   // background: -webkit-linear-gradient(to right, #90da11, #2b6253);  /* Chrome 10-25, Safari 5.1-6 */
+                   // background: linear-gradient(to right, #90da11, #2b6253); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+                    color:white;
+                    .circle{
+                        background: #fff;
+                        span > i{
+                            color: #00a6eb;
+                        }
+                    }
+                    .card-body > p{
+                        color:#fff;
+                    }    
+                }
+                .circle{
+                    width: 90px;
+                    height: 90px;
+                    background: #00a6eb;  /* fallback for old browsers */
+                  //  background: -webkit-linear-gradient(to right, #90da11, #2b6253);  /* Chrome 10-25, Safari 5.1-6 */
+                  //  background: linear-gradient(to right, #90da11, #2b6253); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                    border-radius: 50%;
+                    position: absolute;
+                    margin: 0px auto;
+                    left: 0px;
+                    right: 0px;
+                    transition: 0.5s linear;
+                    top: -45px;
+                        span{
+                            color:$secondaryFontColor;
+                                i{
+                                   padding-top: 20px;
+                                   transition: 0.5s linear;
+                                }
+                        }
+                }
+                .card-body{
+                    padding:30px 0px;
+                        h1{
+                            padding: 20px 0px 15px 0px;
+                            text-align: center;
+                            font-family: $primaryFont;
+                            font-size: 18px;
+                            font-weight: 700;
+                            text-align: center;
+                            transition: 0.5s linear;
+                        }
+                        p{
+                            text-align: center;
+                            padding: 0px 15px;
+                            line-height: 20px;
+                            font-family: $primaryFont;
+                            font-size: 16px;
+                            text-align: center;
+                            color: #696969;
+                            transition: 0.5s linear;
+                        }
+                    }
+        }
+}
+.card-wrap{
+    .col-sm-12{
+        @include for-good-phones{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        }
+}
+.pattern-div{
+    background-color: #fff;
+    padding:50px 0px;
+}
+.pattern-row{
+    .col-sm-12{
+        @include for-servcie-plan-img{
+                text-align: center;
+            }
+        h1{
+            padding-bottom: 20px;
+            font-size: 35px;
+            line-height: 35px;
+            font-family: $primaryFont;
+            text-transform: uppercase;
+            @include for-servcie-plan-img{
+                font-size: 30px;
+                line-height: 30px;
+                padding-top: 20px;
+            }
+            span{
+                color:#00a6eb;
+            }
+        }
+        .first-para{
+            padding-bottom: 10px;
+            font-family: $primaryFont;
+            font-size: 18px;
+            line-height: 22px;
+            @include for-servcie-plan-img{
+                font-size: 16px;
+            }
+        }
+        .second-para{
+            padding-bottom: 25px;
+            font-family: $primaryFont;
+            font-size: 18px;
+            line-height: 22px;
+             @include for-servcie-plan-img{
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+        a{
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: $primaryFont;
+            color:$secondaryFontColor;
+            background-color: #00a6eb;
+            transition:0.3s linear;
+            &:hover{
+                text-decoration: none;
+                background:#fff;
+                color:#00a6eb;
+                border:1px solid #00a6eb; 
+            }
+        }
+    }
+}
+.plan-main{
+    padding: 50px 0px;
+    background-color: #f3f3fb;
+}
+.plan-row1{
+        .col-sm-12{
+               
+                    
+                h1{
+                    font-family: $primaryFont;
+                    font-size: 35px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                        @include for-good-phones{
+                            text-align: center;
+                        }
+                        span{
+                            color: #00a6eb;
+                        }
+                }
+                p{
+                     font-family: $primaryFont;
+                     line-height: 20px;
+                     @include for-good-phones{
+                            text-align: center;
+                        }
+                }
+        }
+}
+.hover{
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    overflow: hidden;
+        @include for-good-phones{
+            width: 70%;
+        }
+        @include for-servcie-plan-img{
+             width: 100%;
+        } 
+    &:hover{
+        .inner-hover{
+            top:0%;
+            opacity: 0.7;
+        }
+        .back-img{
+            opacity: 0.5;
+        }
+    }
+    .inner-hover{
+        width: 100%;
+        height: 16rem;
+        position: absolute;
+        background-color: #022060;
+        top:70%;
+        opacity: 0.7;
+        transition: 0.4s linear;
+        z-index: 10;
+            @include for-phones-devices{
+                top:0%;
+            }
+    }
+    .back-img{
+        width:  100%;
+        height: 16rem;
+        position: absolute;
+        transition: 0.4s linear;
+            .img-hov{
+                width: 100%;
+                height: 16rem;
+            }
+    }
+
+}
+.hov-h{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: $primaryFont;
+    color: #fff;
+    text-align: left;
+    padding:0px 0px 20px 10px;
+        @include for-tabs-only{
+            font-size: 22px
+        }
+        @include for-servcie-plan-img{
+             font-size: 20px;
+        }
+
+}
+.hov-p{
+    font-family: $primaryFont;
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+}
+.col-inner-1{
+    span{
+        i{
+            font-size: 30px;
+            color:white;
+            padding-left: 20px;
+        }
+    }
+}
+.col-inner-2{
+    width:70%;
+    padding-top:30px;
+    @include for-tabs-only{
+            padding-top:20px;
+        }
+}
+.col-inner-1{
+    padding-top:30px
+}
+.plan-row2{
+    padding-top: 50px;
+    .col-sm-12{
+                @include for-good-phones{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                }
+    }
+}
+.plan-row3{
+    text-align: center;
+    padding-top: 30px;
+    a{
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: $primaryFont;
+            color:$secondaryFontColor;
+            background-color: #00a6eb;
+            transition:0.3s linear;
+            &:hover{
+                text-decoration: none;
+                background:#fff;
+                color:#00a6eb;
+                border:1px solid #00a6eb; 
+            }
+        }
+}
+.finacc-wrap{
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+.fin-row1{
+    .col-sm-12{
+        @include for-good-phones{
+            text-align: center;
+        }
+        img{
+            padding-bottom: 20px;
+        }
+        h1{
+                    font-family: $primaryFont;
+                    font-size: 35px;
+                    font-weight: bold;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    padding-bottom: 30px;
+                        @include for-good-phones{
+                            text-align: center;
+                        }
+                        span{
+                            color: #00a6eb;
+                        }
+                }
+                p{
+                     font-family: $primaryFont;
+                     line-height: 25px;
+                     padding-right: 50px;
+                     @include for-good-phones{
+                            text-align: center;
+                            padding-right: 0px;
+                        }
+                }
+    }
+}
+.fin-row1{
+.finacc-col-row{
+    box-shadow: 0 0 5px #a2a2a2;
+    padding-bottom: 30px;
+    @include for-all-devices{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+        h1{
+                    font-family: $primaryFont;
+                    font-size: 35px;
+                    font-weight: bold;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    padding:50px 0px 30px 35px;
+                        @include for-good-phones{
+                            text-align: center;
+                        }
+                        @include for-phones-devices{
+                            padding-bottom: 70px;
+                        }
+                        span{
+                            color: #00a6eb;
+                        }
+                }
+                p{
+                     font-family: $primaryFont;
+                     line-height: 25px;
+                     @include for-good-phones{
+                            text-align: center;
+                        }
+                }
+    
+}
+}
+.finacc-col{
+    position: relative;
+    padding:30px 40px;
+    transition: 0.4s linear;
+        @include for-all-devices{
+            width: 70%;
+            box-shadow: 0 0 5px #a2a2a2;
+            margin-bottom: 20px;
+        }
+        @include for-good-phones{
+            text-align: left !important
+        }
+        @include for-phones-devices{
+            text-align: center !important;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+         &:hover{
+                background: #00a6eb;
+                color: white;
+                        .finacc-circle{
+                            background-color: white;
+                            color: #00a6eb;
+                            border:1px solid #00a6eb;
+                            opacity: 1;
+                        }
+                        
+                            
+                    }
+            .finacc-circle{
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #00a6eb;
+                text-align: center;
+                left: -57px;
+                padding-top: 15px;
+                color: white;
+                transition: 0.4s linear;
+                opacity: 0.8;
+                 @include for-all-devices{
+                     top:40px;
+                     left:-45px;
+                 }
+                @include for-phones-devices{
+                    top: -45px;
+                    left: 0px;
+                    right: 0px;
+                    margin: 0px auto;
+                }
+            }
+        h2{
+            font-size: 25px;
+            text-transform: capitalize;
+            font-weight: bold;
+            padding-top:15px;
+            padding-bottom: 15px;
+            font-family: $primaryFont;
+                @include for-phones-devices{
+            text-align: center !important;
+                }
+        }
+        p{
+            @include for-good-phones{
+            text-align: left !important
+        }
+            @include for-phones-devices{
+            text-align: center !important;
+        }
+        }
+
+}
+.slider-wrap{
+    margin-top:10px;
+}
+.slider-div{
+    padding: 0px !important;
+    background-image: url('../img/pattern3.png');
+    background-repeat: no-repeat;
+        .carousel-inner{
+            .carousel-item{
+                width: 100%;
+                transition: 0.4s linear;
+                .inner-content-slide{
+                    width: 100%;
+                        .inner-content{
+                            padding: 50px 50px;
+                                h1{
+                                    font-family: $primaryFont;
+                                    font-size: 30px;
+                                    color: black;
+                                    text-transform: uppercase;
+                                    padding-bottom: 30px;
+                                    
+                                    padding: 20px 10px;
+                                   width: 100%;
+                                        span{
+                                            color: #00a6eb;
+                                        }
+                                        @include for-all-devices{
+                                            display: inline;
+                                            width: 30%;
+                                        }
+                                        @include for-extra-small-devices{
+                                            width: 100%;
+                                            font-size: 22px;
+                                            display: block;
+                                        }
+                                }
+                                p{
+                                    
+                                    padding:20px 30px;
+                                    width: 100%;
+                                    font-family:$primaryFont;
+                                    line-height: 20px;
+                                    @include for-extra-small-devices{
+                                            width: 100%;
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                        }
+                                }
+                        }
+                }
+            }
+        }
+
+        
+}
+.comment-div-wrap{
+    padding-top: 20px;
+}
+.p-circle{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #a2a2a2
+}
+.comment-h{
+    font-family: $primaryFont;
+    color: #180316;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 0px !important;
+}
+.comment-p{
+    font-family: $primaryFont;
+    color: #00a6eb;
+    background: none !important;
+    padding: 0px !important;
+    width:100% !important;
+}
+.com-div{
+    padding: 20px 20px;   
+}
+.img-circle{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.awards-div{
+    padding: 50px 20px 0px 20px;
+        h1{
+            padding-bottom: 20px;
+            font-family: $primaryFont;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+                span{
+                    color:#00a6eb;
+                }
+                @include for-all-devices{
+                    text-align: center;
+                }
+        }
+        p{
+            font-family: $primaryFont;
+            line-height: 25px;
+            @include for-all-devices{
+                    text-align: center;
+                }
+        }
+        .flex-wrap{
+            padding-top: 35px;
+            @include for-all-devices{
+                    justify-content: center;
+                }
+            div{
+                box-shadow: 0 0 5px #a2a2a2;
+                margin-right: 15px;
+                width: 25%;
+                transition: 0.3s linear;
+                text-align: center;
+                padding: 10px;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                    img{
+                        width: 70%;
+                    }
+            }
+        }
+}
+.accod-sec{
+    padding-top:50px;
+    padding-bottom: 50px;
+        h1{
+            font-family: $primaryFont;
+            font-size: 35px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+                span{
+                    color: #00a6eb;
+                }
+        }
+        #accordion{
+            h3{
+                padding: 30px;
+                box-shadow: 0 0 5px #a2a2a2;
+                margin-bottom: 15px;
+                font-family: $primaryFont;
+                color:#00a6eb;
+                font-weight: bold;
+                transition: 0.3s linear;
+                position: relative;
+                    &:hover{
+                        background-color: #00a6eb;
+                        color:#fff;
+                        cursor: pointer;
+                            .fa-plus{
+                                animation: rotate 0.5s linear;
+                            }
+                            .fa-minus{
+                                animation: rotate 0.5s linear;
+                            }
+                    }
+            }
+            div{    
+                padding-bottom: 10px;
+                        p{
+                            font-family: $primaryFont;
+                            line-height: 20px;
+                        }
+                    }
+        } 
+}
+.pattern-bg3{
+    background-image: url('../img/pattern2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+        div{
+            padding:0px 30px;
+                h1{
+                    font-family: $primaryFont;
+                    color:#00a6eb;
+                    font-weight: bold;
+                    font-size: 50px;
+                    padding-bottom:0px !important;
+                }
+                p{
+                    font-family: $primaryFont;
+                    color:#00a6eb;
+                }
+        }
+}
+.card2-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card2-main{
+    padding-top:50px;
+    padding-bottom:50px;
+        h1{
+            font-size: 35px;
+            font-weight: bold;
+            font-family: $primaryFont;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+                span{
+                    color:#00a6eb;
+                }
+        }
+        p{
+            font-family: $primaryFont;
+            line-height: 20px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        .card2{
+            padding-bottom: 20px;
+            width: 18rem;
+            .card-body{
+                text-align: center;
+                h5{
+                    font-family: $primaryFont;
+                    color: black;
+                    font-weight: bold;
+                    text-align: left !important;
+                    padding-bottom: 10px;
+                }
+                a{
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                    font-family: $primaryFont;
+                    color:$secondaryFontColor;
+                    background-color: #00a6eb;
+                    transition:0.3s linear;
+                    &:hover{
+                        text-decoration: none;
+                        background:#fff;
+                        color:#00a6eb;
+                        border:1px solid #00a6eb; 
+                    }
+                }
+            }
+        }
+}
+.req-main{
+    background-color: #000;
+       
+           
+                .row{
+                     padding:20px 30px;
+                        @include for-good-phones{
+                                padding-bottom: 40px;
+                                }
+                    .col-sm-12{
+                        position: relative;
+                        h1{
+                            font-family: $primaryFont;
+                            color:#fff;
+                            font-weight: bold;
+                            font-size: 30px;
+                            text-transform: uppercase;
+                                @include for-good-phones{
+                                text-align: center !important;
+                                padding-bottom: 10px;
+                                }
+                                span{
+                                    color: #00a6eb;
+                                }
+                        }
+                    }
+                    .justify-content-end{
+                        @include for-good-phones{
+                            justify-content: center !important;
+                        }
+                        div{
+                            padding-top: 5px;
+                                a{
+                            padding: 10px 20px;
+                            border-radius: 8px;
+                            font-family: $primaryFont;
+                            color:$secondaryFontColor;
+                            background-color: #00a6eb;
+                            transition:0.3s linear;
+                            &:hover{
+                                text-decoration: none;
+                                background:#fff;
+                                color:#00a6eb;
+                                border:1px solid #00a6eb; 
+                            }
+                        }
+                        }
+                    }
+                }
+        
+}
+.footer-main{
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color: #011955;
+}
+.footer-col{
+    .d-flex{
+        div{
+            p{
+                padding-top:20px;
+                font-family: $primaryFont;
+                color:#fff;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.footer-col-link{
+    h1{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: $primaryFont;
+        color: #fff;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+         padding-left: 20px;
+    }
+    ul{
+        list-style: none;
+        padding-left: 20px;
+            li{
+                padding: 5px 0px;
+                    a{
+                        color: #fff;
+                        text-transform: capitalize;
+                        transition: 0.3s linear;
+                        font-family: $primaryFont;
+                            &:hover{
+                                color: #00a6eb;
+                                text-decoration: none;
+                            }
+                    }
+            }
+    }
+}
+.footer-col-social{
+    h1{
+        font-family: $primaryFont;
+        padding-bottom: 20px;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    a{
+        color: #fff;
+        text-transform: capitalize;
+        transition: 0.3s linear;
+        font-family: $primaryFont;
+        display: block;
+        padding: 5px 0px;
+            &:hover{
+                     color: #00a6eb;
+                    text-decoration: none;
+                    }
+            }
+
+}
+.social-links{
+    padding-top:30px;
+    a{
+        padding-right: 10px;
+    }
+        
+}
+.bottom{
+    p{
+        color: #fff;
+        font-family: $primaryFont;
+    }
+}
+//Animations//
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.fa-plus{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    font-size: 20px;
+        @include f-768px-to-1200px{
+            font-size: 16px;
+        }
+        @include for-good-phones{
+         font-size: 16px;
+    }
+        @include for-tabs-only{
+            right: 1%;
+        }
+}
+.fa-minus{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    font-size: 20px;
+     @include f-768px-to-1200px{
+            font-size: 16px;
+        }
+    @include for-good-phones{
+         font-size: 16px;
+    }
+    @include for-tabs-only{
+            right: 1%;
+        }
+}
+.ui-accordion-content{
+    @include for-good-phones{
+         height: auto;
+    }
+}
+.contact-form{
+    background-color: transparentize(black,0.7);
+    padding: 30px 20px;
+        .form-group{
+                label{
+                    font-family: $primaryFont;
+                    color: #fff;
+                    padding-bottom: 10px;
+                }
+                input{
+                    font-family: $primaryFont;
+                    font-size: 14px;
+                }
+                .btn{
+                    color: #fff;
+                    background-color:#00a6eb; 
+                    text-transform: capitalize;
+                    transition: 0.3s linear;
+                    font-family: $primaryFont;
+                     &:hover{
+                     color: #00a6eb;
+                     background-color: white;
+                    text-decoration: none;
+                    }
+            }
+                }
+        }
+
+.con-h{
+    font-family: $primaryFont;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

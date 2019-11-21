@@ -1,0 +1,879 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Fresca';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Fresca-Regular"), url(https://fonts.gstatic.com/s/fresca/v7/6ae94K--SKgCzbMGE7cX53A.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Fresca';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Fresca-Regular"), url(https://fonts.gstatic.com/s/fresca/v7/6ae94K--SKgCzbMGHbcX.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+html {
+  scroll-behavior: smooth; }
+
+.cus-nav {
+  padding: .5rem 0rem !important; }
+
+.navbar-toggler {
+  padding: 0px !important; }
+
+.nav-wrap {
+  background-color: #0e1436; }
+
+.navbar-brand {
+  box-shadow: 0 0 5px #a2a2a2; }
+  @media only screen and (min-width: 200px) and (max-width: 460px) {
+    .navbar-brand {
+      width: 150px; } }
+  @media only screen and (min-width: 200px) and (max-width: 460px) {
+    .navbar-brand img {
+      width: 150px; } }
+
+.dropdown-menu {
+  position: absolute;
+  top: 135%; }
+
+.navbar-toggler-icon {
+  color: #fff; }
+
+.cus-ul-wrap {
+  justify-content: space-evenly; }
+  .cus-ul-wrap ul .nav-item {
+    padding: 5px 5px;
+    font-family: "Fresca"; }
+    @media only screen and (min-width: 200px) and (max-width: 460px) {
+      .cus-ul-wrap ul .nav-item {
+        padding: 0px 5px; } }
+    .cus-ul-wrap ul .nav-item .nav-link {
+      text-transform: capitalize;
+      transition: 0.3s linear;
+      color: #fff; }
+      .cus-ul-wrap ul .nav-item .nav-link:hover {
+        text-decoration: none;
+        color: #00a6eb; }
+
+.banner {
+  background-image: url("../img/main-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.banner-div {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background: transparent; }
+  @media only screen and (min-width: 200px) and (max-width: 575px) {
+    .banner-div {
+      padding-top: 100px;
+      padding-bottom: 50px; } }
+  .banner-div h1 {
+    padding: 15px 0px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Fresca";
+    color: #fff;
+    text-transform: uppercase; }
+    @media only screen and (min-width: 200px) and (max-width: 575px) {
+      .banner-div h1 {
+        font-size: 35px; } }
+  .banner-div p {
+    padding: 15px 0px 60px 0px;
+    font-size: 18px;
+    font-family: "Fresca";
+    color: #fff;
+    line-height: 25px; }
+    @media only screen and (min-width: 200px) and (max-width: 575px) {
+      .banner-div p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 15px 0px 30px 0px; } }
+  .banner-div a {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: "Fresca";
+    color: #fff;
+    background-color: #00a6eb;
+    transition: 0.3s linear; }
+    .banner-div a:hover {
+      text-decoration: none;
+      background: #fff;
+      color: #00a6eb; }
+
+.card-container {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: #e6e9f8; }
+  .card-container .card {
+    width: auto;
+    position: relative;
+    text-align: center;
+    border-radius: 0px;
+    transition: 0.5s linear;
+    height: 230px; }
+    .card-container .card:hover {
+      background: #00a6eb;
+      /* fallback for old browsers */
+      color: white; }
+      .card-container .card:hover .circle {
+        background: #fff; }
+        .card-container .card:hover .circle span > i {
+          color: #00a6eb; }
+      .card-container .card:hover .card-body > p {
+        color: #fff; }
+    .card-container .card .circle {
+      width: 90px;
+      height: 90px;
+      background: #00a6eb;
+      /* fallback for old browsers */
+      border-radius: 50%;
+      position: absolute;
+      margin: 0px auto;
+      left: 0px;
+      right: 0px;
+      transition: 0.5s linear;
+      top: -45px; }
+      .card-container .card .circle span {
+        color: #fff; }
+        .card-container .card .circle span i {
+          padding-top: 20px;
+          transition: 0.5s linear; }
+    .card-container .card .card-body {
+      padding: 30px 0px; }
+      .card-container .card .card-body h1 {
+        padding: 20px 0px 15px 0px;
+        text-align: center;
+        font-family: "Fresca";
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        transition: 0.5s linear; }
+      .card-container .card .card-body p {
+        text-align: center;
+        padding: 0px 15px;
+        line-height: 20px;
+        font-family: "Fresca";
+        font-size: 16px;
+        text-align: center;
+        color: #696969;
+        transition: 0.5s linear; }
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+  .card-wrap .col-sm-12 {
+    padding-top: 30px;
+    padding-bottom: 30px; } }
+
+.pattern-div {
+  background-color: #fff;
+  padding: 50px 0px; }
+
+@media only screen and (min-width: 200px) and (max-width: 460px) {
+  .pattern-row .col-sm-12 {
+    text-align: center; } }
+.pattern-row .col-sm-12 h1 {
+  padding-bottom: 20px;
+  font-size: 35px;
+  line-height: 35px;
+  font-family: "Fresca";
+  text-transform: uppercase; }
+  @media only screen and (min-width: 200px) and (max-width: 460px) {
+    .pattern-row .col-sm-12 h1 {
+      font-size: 30px;
+      line-height: 30px;
+      padding-top: 20px; } }
+  .pattern-row .col-sm-12 h1 span {
+    color: #00a6eb; }
+.pattern-row .col-sm-12 .first-para {
+  padding-bottom: 10px;
+  font-family: "Fresca";
+  font-size: 18px;
+  line-height: 22px; }
+  @media only screen and (min-width: 200px) and (max-width: 460px) {
+    .pattern-row .col-sm-12 .first-para {
+      font-size: 16px; } }
+.pattern-row .col-sm-12 .second-para {
+  padding-bottom: 25px;
+  font-family: "Fresca";
+  font-size: 18px;
+  line-height: 22px; }
+  @media only screen and (min-width: 200px) and (max-width: 460px) {
+    .pattern-row .col-sm-12 .second-para {
+      font-size: 16px;
+      text-align: center; } }
+.pattern-row .col-sm-12 a {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: "Fresca";
+  color: #fff;
+  background-color: #00a6eb;
+  transition: 0.3s linear; }
+  .pattern-row .col-sm-12 a:hover {
+    text-decoration: none;
+    background: #fff;
+    color: #00a6eb;
+    border: 1px solid #00a6eb; }
+
+.plan-main {
+  padding: 50px 0px;
+  background-color: #f3f3fb; }
+
+.plan-row1 .col-sm-12 h1 {
+  font-family: "Fresca";
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .plan-row1 .col-sm-12 h1 {
+      text-align: center; } }
+  .plan-row1 .col-sm-12 h1 span {
+    color: #00a6eb; }
+.plan-row1 .col-sm-12 p {
+  font-family: "Fresca";
+  line-height: 20px; }
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .plan-row1 .col-sm-12 p {
+      text-align: center; } }
+
+.hover {
+  position: relative;
+  width: 100%;
+  height: 16rem;
+  overflow: hidden; }
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .hover {
+      width: 70%; } }
+  @media only screen and (min-width: 200px) and (max-width: 460px) {
+    .hover {
+      width: 100%; } }
+  .hover:hover .inner-hover {
+    top: 0%;
+    opacity: 0.7; }
+  .hover:hover .back-img {
+    opacity: 0.5; }
+  .hover .inner-hover {
+    width: 100%;
+    height: 16rem;
+    position: absolute;
+    background-color: #022060;
+    top: 70%;
+    opacity: 0.7;
+    transition: 0.4s linear;
+    z-index: 10; }
+    @media only screen and (min-width: 200px) and (max-width: 575px) {
+      .hover .inner-hover {
+        top: 0%; } }
+  .hover .back-img {
+    width: 100%;
+    height: 16rem;
+    position: absolute;
+    transition: 0.4s linear; }
+    .hover .back-img .img-hov {
+      width: 100%;
+      height: 16rem; }
+
+.hov-h {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Fresca";
+  color: #fff;
+  text-align: left;
+  padding: 0px 0px 20px 10px; }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .hov-h {
+      font-size: 22px; } }
+  @media only screen and (min-width: 200px) and (max-width: 460px) {
+    .hov-h {
+      font-size: 20px; } }
+
+.hov-p {
+  font-family: "Fresca";
+  color: #fff;
+  text-align: left;
+  padding-left: 10px; }
+
+.col-inner-1 span i {
+  font-size: 30px;
+  color: white;
+  padding-left: 20px; }
+
+.col-inner-2 {
+  width: 70%;
+  padding-top: 30px; }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .col-inner-2 {
+      padding-top: 20px; } }
+
+.col-inner-1 {
+  padding-top: 30px; }
+
+.plan-row2 {
+  padding-top: 50px; }
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .plan-row2 .col-sm-12 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 20px; } }
+
+.plan-row3 {
+  text-align: center;
+  padding-top: 30px; }
+  .plan-row3 a {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: "Fresca";
+    color: #fff;
+    background-color: #00a6eb;
+    transition: 0.3s linear; }
+    .plan-row3 a:hover {
+      text-decoration: none;
+      background: #fff;
+      color: #00a6eb;
+      border: 1px solid #00a6eb; }
+
+.finacc-wrap {
+  padding-top: 50px;
+  padding-bottom: 0px; }
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+  .fin-row1 .col-sm-12 {
+    text-align: center; } }
+.fin-row1 .col-sm-12 img {
+  padding-bottom: 20px; }
+.fin-row1 .col-sm-12 h1 {
+  font-family: "Fresca";
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-bottom: 30px; }
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .fin-row1 .col-sm-12 h1 {
+      text-align: center; } }
+  .fin-row1 .col-sm-12 h1 span {
+    color: #00a6eb; }
+.fin-row1 .col-sm-12 p {
+  font-family: "Fresca";
+  line-height: 25px;
+  padding-right: 50px; }
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .fin-row1 .col-sm-12 p {
+      text-align: center;
+      padding-right: 0px; } }
+
+.fin-row1 .finacc-col-row {
+  box-shadow: 0 0 5px #a2a2a2;
+  padding-bottom: 30px; }
+  @media only screen and (min-width: 200px) and (max-width: 992px) {
+    .fin-row1 .finacc-col-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; } }
+  .fin-row1 .finacc-col-row h1 {
+    font-family: "Fresca";
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 50px 0px 30px 35px; }
+    @media only screen and (min-width: 200px) and (max-width: 768px) {
+      .fin-row1 .finacc-col-row h1 {
+        text-align: center; } }
+    @media only screen and (min-width: 200px) and (max-width: 575px) {
+      .fin-row1 .finacc-col-row h1 {
+        padding-bottom: 70px; } }
+    .fin-row1 .finacc-col-row h1 span {
+      color: #00a6eb; }
+  .fin-row1 .finacc-col-row p {
+    font-family: "Fresca";
+    line-height: 25px; }
+    @media only screen and (min-width: 200px) and (max-width: 768px) {
+      .fin-row1 .finacc-col-row p {
+        text-align: center; } }
+
+.finacc-col {
+  position: relative;
+  padding: 30px 40px;
+  transition: 0.4s linear; }
+  @media only screen and (min-width: 200px) and (max-width: 992px) {
+    .finacc-col {
+      width: 70%;
+      box-shadow: 0 0 5px #a2a2a2;
+      margin-bottom: 20px; } }
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .finacc-col {
+      text-align: left !important; } }
+  @media only screen and (min-width: 200px) and (max-width: 575px) {
+    .finacc-col {
+      text-align: center !important;
+      width: 100%;
+      margin-bottom: 50px; } }
+  .finacc-col:hover {
+    background: #00a6eb;
+    color: white; }
+    .finacc-col:hover .finacc-circle {
+      background-color: white;
+      color: #00a6eb;
+      border: 1px solid #00a6eb;
+      opacity: 1; }
+  .finacc-col .finacc-circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #00a6eb;
+    text-align: center;
+    left: -57px;
+    padding-top: 15px;
+    color: white;
+    transition: 0.4s linear;
+    opacity: 0.8; }
+    @media only screen and (min-width: 200px) and (max-width: 992px) {
+      .finacc-col .finacc-circle {
+        top: 40px;
+        left: -45px; } }
+    @media only screen and (min-width: 200px) and (max-width: 575px) {
+      .finacc-col .finacc-circle {
+        top: -45px;
+        left: 0px;
+        right: 0px;
+        margin: 0px auto; } }
+  .finacc-col h2 {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Fresca"; }
+    @media only screen and (min-width: 200px) and (max-width: 575px) {
+      .finacc-col h2 {
+        text-align: center !important; } }
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .finacc-col p {
+      text-align: left !important; } }
+  @media only screen and (min-width: 200px) and (max-width: 575px) {
+    .finacc-col p {
+      text-align: center !important; } }
+
+.slider-wrap {
+  margin-top: 10px; }
+
+.slider-div {
+  padding: 0px !important;
+  background-image: url("../img/pattern3.png");
+  background-repeat: no-repeat; }
+  .slider-div .carousel-inner .carousel-item {
+    width: 100%;
+    transition: 0.4s linear; }
+    .slider-div .carousel-inner .carousel-item .inner-content-slide {
+      width: 100%; }
+      .slider-div .carousel-inner .carousel-item .inner-content-slide .inner-content {
+        padding: 50px 50px; }
+        .slider-div .carousel-inner .carousel-item .inner-content-slide .inner-content h1 {
+          font-family: "Fresca";
+          font-size: 30px;
+          color: black;
+          text-transform: uppercase;
+          padding-bottom: 30px;
+          padding: 20px 10px;
+          width: 100%; }
+          .slider-div .carousel-inner .carousel-item .inner-content-slide .inner-content h1 span {
+            color: #00a6eb; }
+          @media only screen and (min-width: 200px) and (max-width: 992px) {
+            .slider-div .carousel-inner .carousel-item .inner-content-slide .inner-content h1 {
+              display: inline;
+              width: 30%; } }
+          @media only screen and (min-width: 200px) and (max-width: 400px) {
+            .slider-div .carousel-inner .carousel-item .inner-content-slide .inner-content h1 {
+              width: 100%;
+              font-size: 22px;
+              display: block; } }
+        .slider-div .carousel-inner .carousel-item .inner-content-slide .inner-content p {
+          padding: 20px 30px;
+          width: 100%;
+          font-family: "Fresca";
+          line-height: 20px; }
+          @media only screen and (min-width: 200px) and (max-width: 400px) {
+            .slider-div .carousel-inner .carousel-item .inner-content-slide .inner-content p {
+              width: 100%;
+              font-size: 14px;
+              line-height: 18px; } }
+
+.comment-div-wrap {
+  padding-top: 20px; }
+
+.p-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #a2a2a2; }
+
+.comment-h {
+  font-family: "Fresca";
+  color: #180316;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 0px !important; }
+
+.comment-p {
+  font-family: "Fresca";
+  color: #00a6eb;
+  background: none !important;
+  padding: 0px !important;
+  width: 100% !important; }
+
+.com-div {
+  padding: 20px 20px; }
+
+.img-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; }
+
+.awards-div {
+  padding: 50px 20px 0px 20px; }
+  .awards-div h1 {
+    padding-bottom: 20px;
+    font-family: "Fresca";
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .awards-div h1 span {
+      color: #00a6eb; }
+    @media only screen and (min-width: 200px) and (max-width: 992px) {
+      .awards-div h1 {
+        text-align: center; } }
+  .awards-div p {
+    font-family: "Fresca";
+    line-height: 25px; }
+    @media only screen and (min-width: 200px) and (max-width: 992px) {
+      .awards-div p {
+        text-align: center; } }
+  .awards-div .flex-wrap {
+    padding-top: 35px; }
+    @media only screen and (min-width: 200px) and (max-width: 992px) {
+      .awards-div .flex-wrap {
+        justify-content: center; } }
+    .awards-div .flex-wrap div {
+      box-shadow: 0 0 5px #a2a2a2;
+      margin-right: 15px;
+      width: 25%;
+      transition: 0.3s linear;
+      text-align: center;
+      padding: 10px; }
+      .awards-div .flex-wrap div:hover {
+        transform: scale(1.05); }
+      .awards-div .flex-wrap div img {
+        width: 70%; }
+
+.accod-sec {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .accod-sec h1 {
+    font-family: "Fresca";
+    font-size: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .accod-sec h1 span {
+      color: #00a6eb; }
+  .accod-sec #accordion h3 {
+    padding: 30px;
+    box-shadow: 0 0 5px #a2a2a2;
+    margin-bottom: 15px;
+    font-family: "Fresca";
+    color: #00a6eb;
+    font-weight: bold;
+    transition: 0.3s linear;
+    position: relative; }
+    .accod-sec #accordion h3:hover {
+      background-color: #00a6eb;
+      color: #fff;
+      cursor: pointer; }
+      .accod-sec #accordion h3:hover .fa-plus {
+        animation: rotate 0.5s linear; }
+      .accod-sec #accordion h3:hover .fa-minus {
+        animation: rotate 0.5s linear; }
+  .accod-sec #accordion div {
+    padding-bottom: 10px; }
+    .accod-sec #accordion div p {
+      font-family: "Fresca";
+      line-height: 20px; }
+
+.pattern-bg3 {
+  background-image: url("../img/pattern2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .pattern-bg3 div {
+    padding: 0px 30px; }
+    .pattern-bg3 div h1 {
+      font-family: "Fresca";
+      color: #00a6eb;
+      font-weight: bold;
+      font-size: 50px;
+      padding-bottom: 0px !important; }
+    .pattern-bg3 div p {
+      font-family: "Fresca";
+      color: #00a6eb; }
+
+.card2-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.card2-main {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .card2-main h1 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Fresca";
+    text-transform: uppercase;
+    padding-bottom: 30px; }
+    .card2-main h1 span {
+      color: #00a6eb; }
+  .card2-main p {
+    font-family: "Fresca";
+    line-height: 20px;
+    padding-bottom: 30px;
+    text-align: center; }
+  .card2-main .card2 {
+    padding-bottom: 20px;
+    width: 18rem; }
+    .card2-main .card2 .card-body {
+      text-align: center; }
+      .card2-main .card2 .card-body h5 {
+        font-family: "Fresca";
+        color: black;
+        font-weight: bold;
+        text-align: left !important;
+        padding-bottom: 10px; }
+      .card2-main .card2 .card-body a {
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-family: "Fresca";
+        color: #fff;
+        background-color: #00a6eb;
+        transition: 0.3s linear; }
+        .card2-main .card2 .card-body a:hover {
+          text-decoration: none;
+          background: #fff;
+          color: #00a6eb;
+          border: 1px solid #00a6eb; }
+
+.req-main {
+  background-color: #000; }
+  .req-main .row {
+    padding: 20px 30px; }
+    @media only screen and (min-width: 200px) and (max-width: 768px) {
+      .req-main .row {
+        padding-bottom: 40px; } }
+    .req-main .row .col-sm-12 {
+      position: relative; }
+      .req-main .row .col-sm-12 h1 {
+        font-family: "Fresca";
+        color: #fff;
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: uppercase; }
+        @media only screen and (min-width: 200px) and (max-width: 768px) {
+          .req-main .row .col-sm-12 h1 {
+            text-align: center !important;
+            padding-bottom: 10px; } }
+        .req-main .row .col-sm-12 h1 span {
+          color: #00a6eb; }
+    @media only screen and (min-width: 200px) and (max-width: 768px) {
+      .req-main .row .justify-content-end {
+        justify-content: center !important; } }
+    .req-main .row .justify-content-end div {
+      padding-top: 5px; }
+      .req-main .row .justify-content-end div a {
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-family: "Fresca";
+        color: #fff;
+        background-color: #00a6eb;
+        transition: 0.3s linear; }
+        .req-main .row .justify-content-end div a:hover {
+          text-decoration: none;
+          background: #fff;
+          color: #00a6eb;
+          border: 1px solid #00a6eb; }
+
+.footer-main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #011955; }
+
+.footer-col .d-flex div p {
+  padding-top: 20px;
+  font-family: "Fresca";
+  color: #fff;
+  line-height: 30px; }
+
+.footer-col-link h1 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Fresca";
+  color: #fff;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  padding-left: 20px; }
+.footer-col-link ul {
+  list-style: none;
+  padding-left: 20px; }
+  .footer-col-link ul li {
+    padding: 5px 0px; }
+    .footer-col-link ul li a {
+      color: #fff;
+      text-transform: capitalize;
+      transition: 0.3s linear;
+      font-family: "Fresca"; }
+      .footer-col-link ul li a:hover {
+        color: #00a6eb;
+        text-decoration: none; }
+
+.footer-col-social h1 {
+  font-family: "Fresca";
+  padding-bottom: 20px;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold; }
+.footer-col-social a {
+  color: #fff;
+  text-transform: capitalize;
+  transition: 0.3s linear;
+  font-family: "Fresca";
+  display: block;
+  padding: 5px 0px; }
+  .footer-col-social a:hover {
+    color: #00a6eb;
+    text-decoration: none; }
+
+.social-links {
+  padding-top: 30px; }
+  .social-links a {
+    padding-right: 10px; }
+
+.bottom p {
+  color: #fff;
+  font-family: "Fresca"; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+.fa-plus {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  font-size: 20px; }
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .fa-plus {
+      font-size: 16px; } }
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .fa-plus {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .fa-plus {
+      right: 1%; } }
+
+.fa-minus {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  font-size: 20px; }
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .fa-minus {
+      font-size: 16px; } }
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .fa-minus {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .fa-minus {
+      right: 1%; } }
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+  .ui-accordion-content {
+    height: auto; } }
+
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px 20px; }
+  .contact-form .form-group label {
+    font-family: "Fresca";
+    color: #fff;
+    padding-bottom: 10px; }
+  .contact-form .form-group input {
+    font-family: "Fresca";
+    font-size: 14px; }
+  .contact-form .form-group .btn {
+    color: #fff;
+    background-color: #00a6eb;
+    text-transform: capitalize;
+    transition: 0.3s linear;
+    font-family: "Fresca"; }
+    .contact-form .form-group .btn:hover {
+      color: #00a6eb;
+      background-color: white;
+      text-decoration: none; }
+
+.con-h {
+  font-family: "Fresca";
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

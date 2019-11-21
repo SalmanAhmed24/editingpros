@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAW;AACX,UAOC;EANC,WAAW,EAAE,oBAAoB;EACjC,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,YAAY,EAAE,IAAI;EAClB,GAAG,EAAE,uKAAuK;EAC5K,aAAa,EAAE,0JAA0J",
+"sources": ["popins.scss"],
+"names": [],
+"file": "variables.css"
+}
